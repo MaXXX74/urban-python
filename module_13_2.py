@@ -8,12 +8,12 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
 async def start(message):
-    await message.answer('Привет! Я бот помогающий твоему здоровью.')
+    print('Привет! Я бот помогающий твоему здоровью.')
 
 
 @dp.message_handler()
 async def all_massages(message):
-    await message.answer('Введите команду /start, чтобы начать общение.')
+    print('Введите команду /start, чтобы начать общение.')
 
 
 if __name__ == "__main__":
