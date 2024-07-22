@@ -13,5 +13,8 @@ total_users = cursor.execute("SELECT COUNT(*) FROM Users").fetchone()[0]
 
 # рассчитываем сумму всех балансов
 all_balances = cursor.execute("SELECT SUM(balance) FROM Users").fetchone()[0]
+
+# вывод в консоль среднего баланса всех пользователей
 print(all_balances / total_users)
+
 conn.close()
