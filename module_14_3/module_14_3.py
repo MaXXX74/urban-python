@@ -4,7 +4,7 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-token = "5124618412:AAGv62So6kpLWe7zwz7RROqxj6klKLlITck"
+token = "TELEGRAM_BOT_TOKEN"
 bot = Bot(token=token)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
